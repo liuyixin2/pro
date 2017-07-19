@@ -17,6 +17,8 @@ public interface UserDao {
     //此处的方法名必须和mapper中的映射文件中的id同名
     //回去映射文件中通过com.hua.saf.UserDao.getUser,即this.getClass().getName()+".getUser"
     User getUser(int id);
-
-    Map queryUser(Map map);
+    //通过id获得
+    Map<String,Object> queryUser(Map<String,Object> map);
+    //获得所有的user
+    Map<String,Object> queryUsers(Map<String,Object> map);
 }

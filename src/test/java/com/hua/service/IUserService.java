@@ -10,5 +10,7 @@ import java.util.Map;
 public interface IUserService {
     User getUser(int id);
 
-    Map queryUser(Map map);
+    Map<String,Object> queryUser(Map<String,Object> map);
+    
+    Map<String,Object> queryUsers(Map<String,Object> map);
 }
